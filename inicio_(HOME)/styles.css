@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  /* Banner Rotativo */
+  .banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 15s infinite;
+  }
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    position: relative;
+  }
+  .slide style{
+    rotate: 90deg;
+  }
+
+  .slide-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .slide-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    36% { transform: translateX(-100%); }
+    69% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+  }
+
+  /* Relojes destacados */
+  .destacados {
+    padding: 40px;
+    background: rgb(121, 121, 121);
+    text-align: center;
+  }
+
+  .destacados h2 {
+    margin-bottom: 20px;
+  }
+
+  .relojes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .reloj {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .reloj:hover{
+    transform: scale(1.05);
+    box-shadow: black;
+  }
+
+  .reloj img {
+    width: 100%;
+    border-radius: 8px;
+    
+  }
+
+  .reloj h3 {
+    margin: 10px 0 5px;
+  }
+
+  .reloj p {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .reloj a {
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  /* Historia */
+  .historia {
+    padding: 40px;
+    background: #eee;
+    text-align: center;
+  }
+
+  .historia p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
+  .historia a {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  /* Testimonios */
+  .testimonios {
+    padding: 40px;
+    background: white;
+    text-align: center;
+  }
+
+  .testimonios h2 {
+    margin-bottom: 20px;
+  }
+
+  .carrusel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+  }
+
+  .carrusel-inner {
+    display: flex;
+    width: 300%;
+    animation: testimonios-slide 12s infinite;
+  }
+
+  .testimonio {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+
+  .testimonio blockquote {
+    font-style: italic;
+    color: #444;
+  }
+
+  .testimonio cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  @keyframes testimonios-slide {
+    0%, 33% { transform: translateX(0%); }
+    36%, 66% { transform: translateX(-100%); }
+    69%, 100% { transform: translateX(-200%); }
+  }
