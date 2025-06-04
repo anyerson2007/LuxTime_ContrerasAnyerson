@@ -28,22 +28,25 @@
   
 .div2 {
   grid-area: 1 / 2 / 2 / 6;
-  background-color: #97bda0;
+  background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
+
   
 .filters a {
   margin-right: 15px;
   text-decoration: none;
   color: white;
   font-weight: bold;
+  border-radius: 15px;
+  
 }
   
 .div3 {
   grid-area: 2 / 1 / 6 / 6;
-  background-color: #d4edda;
+  background-color: #818181;
   overflow-y: auto;
   padding: 20px;
   display: grid;
