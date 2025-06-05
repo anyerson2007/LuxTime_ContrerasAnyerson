@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../inicio_(HOME)/">Inicio</a>
-            <a href="../Catalago/">Catalago</a>
-            <a href="../Historial_Empresa/index.html">Historia de la Empresa</a>
-            <a href="../Contacto/index.html">Contacto</a>
-        </nav>
-    </header>
+  <header class="main-header">
+    <nav class="nav-links">
+        <a href="../inicio_(HOME)/">Inicio</a>
+        <a href="../Catalago/">Catalago</a>
+        <a href="../Historial_Empresa/index.html">Historia de la Empresa</a>
+        <a href="../Contacto/index.html">Contacto</a>
+    </nav>
+</header>
     <section>
-        <div>
-            Nombre
-            <label for="">nombre</label>
-        </div>
+        <div class="container">
+            <h2>Formulario de Contacto</h2>
+            <form>
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre completo">
+        
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+        
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" placeholder="Ej. 3001234567">
+        
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+        
+              <button type="submit">Enviar</button>
+            </form>
+        
+            <div class="info-adicional">
+              <div class="redes">
+                <a href="https://facebook.com" > <img src="./ausses/social/facebook.png" alt=""></a>
+                <a href="https://instagram.com" ><img src="./ausses/social/instagram.png" alt=""></a>
+                <a href="https://whatsapp.com"><img src="./ausses/social/ws.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        
     </section>
 </body>
 </html>
