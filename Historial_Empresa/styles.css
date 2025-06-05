@@ -14,17 +14,16 @@
     overflow-x: hidden;
     perspective: 1200px; /* Para 3D */
   }
-  .barra-superior {
-    position: fixed;     
-    top: 0;             
-    left: 0;
-    width: 100%;         
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    z-index: 1000;        
-  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 .card{
     margin: 2vh;
