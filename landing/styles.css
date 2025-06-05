@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    background: linear-gradient(to right,#000000,#797979);
+    color: azure;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.content h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.boton{
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.boton:hover{
+    
+    background-color:#686868 ;
+    color: white;
+}
+.boton :active{
+    background-color:#366665 ;
+}
